@@ -1,0 +1,103 @@
+.featured-sports-container {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.featured-sports-container h2 {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.sports-scroll-container {
+  position: relative;
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.sports-cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 0 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sports-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.sport-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 310px;
+  height: 400px;
+  flex: 0 0 auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.sport-card:hover {
+  transform: translateY(-5px);
+}
+
+.sport-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.sport-card h3 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000;
+  margin-right: auto;
+}
+
+.scroll-btn {
+  background: #fff;
+  color: #000;
+  border: 1px solid #1273eb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background: #f0f0f0;
+}
+
+.scroll-btn.left {
+  left: -25px;
+}
+
+.scroll-btn.right {
+  right: -25px;
+}
+
+.scroll-btn span {
+  font-size: 24px;
+  font-weight: bold;
+}

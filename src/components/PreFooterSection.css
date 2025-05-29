@@ -1,0 +1,181 @@
+.pre-footer-container {
+  padding: 60px 20px;
+  background: #000;
+  color: #fff;
+}
+
+.pre-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pre-footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 340px;
+}
+
+.pre-footer-left,
+.pre-footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.instacoach-info h2,
+.instacoach-info p,
+.mailing-list h3,
+.mailing-list p,
+.footer-links ul li,
+.footer-links ul li a,
+.follow-us h3,
+.social-placeholder {
+  color: #fff;
+}
+
+.instacoach-info h2 {
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+}
+
+.mailing-list h3 {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+}
+
+.email-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 420px;
+  height: 65px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  color: #333;
+}
+
+.email-input::placeholder {
+  color: #999;
+}
+
+.submit-btn {
+  padding: 15px 15px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: not-allowed;
+  transition: background 0.3s ease;
+  display: flex;
+  margin-right: 11px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex-direction: row;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #007bff;
+}
+
+.link-column h3 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.link-column ul li a:hover {
+  color: #007bff;
+}
+
+.social-placeholder {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .pre-footer-row {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .email-input-wrapper {
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links ul {
+    justify-content: center;
+  }
+}
