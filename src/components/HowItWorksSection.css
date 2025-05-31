@@ -49,12 +49,14 @@
   border-radius: 15px;
   padding: 30px;
   width: 350px;
-  height: 380px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   flex-direction: column;
+  height: auto; /* Allow natural height */
 }
+
+
 
 .header {
   display: flex;
@@ -110,4 +112,54 @@
   letter-spacing: 0;
   text-align: left;
   color: #000;
+}
+
+/* Default layout (desktop) */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Default icon */
+.card .icon {
+  height: 120px;
+}
+
+/* === Mobile overrides === */
+@media (max-width: 640px) {
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 29px;
+    text-align: left;
+  }
+
+  .header {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0;
+  }
+
+  .card .icon {
+    height: 78px;
+    width: 78px;
+    flex-shrink: 0;
+  }
+
+  .card h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 87px; /* Indent p under h3 to align with h3 */
+    margin-top: -22px;
+  }
 }

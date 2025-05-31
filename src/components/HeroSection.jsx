@@ -26,7 +26,7 @@ const HeroSection = () => {
             className={`floating-image img-${index}`}
           />
         ))}
-        <div className="text-center mt-10 md:mt-16 lg:mt-24 px-4">
+        <div className="text-center mt-0 md:mt-16 lg:mt-24 px-4">
           <h1 className="text-white text-2xl md:text-4xl lg:text-5xl leading-snug flex justify-center flex-wrap gap-x-2">
             <span className="font-medium text-3xl md:text-5xl lg:text-6xl">
               Train with
@@ -45,9 +45,13 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <h3 className="mt-20">Find the perfect coach</h3>
+        {/* Desktop version */}
+        <h3 className="heading-desktop">Find the perfect coach</h3>
 
         <div className="search-bar-container">
+          {/* Mobile version of heading */}
+          <h3 className="heading-mobile">Find the perfect coach</h3>
+
           <div className="search-section">
             <div className="label-icon">
               <MenuIcon className="icon" />
@@ -76,8 +80,9 @@ const HeroSection = () => {
             <input type="text" placeholder="Enter address or zip" />
           </div>
 
-          <button className="search-button">
-            <SearchIcon style={{ color: "white" }} />
+          <button className="search-button flex items-center gap-2 text-white text-sm font-medium">
+            <SearchIcon className="text-white" />
+            <span className="block md:hidden">Find Coach</span>
           </button>
         </div>
       </div>

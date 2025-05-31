@@ -1,0 +1,109 @@
+/* src/pages/BecomeACoachPage.css */
+.become-a-coach-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 60px 20px;
+    background-color: #eaf6ff;
+    border-radius: 30px;
+    text-align: center;
+  }
+  
+  .text-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .become-a-coach-title {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .highlight {
+    font-weight: 900;
+    color: #1e40af; /* Matching the blue highlight color used in HowItWorksPage */
+  }
+  
+  .become-a-coach-subtitle {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+  }
+  
+  .image-section {
+    position: relative;
+    height: 300px;
+    background-image: url("https://storage.googleapis.com/instacoach-static-public-assets/how-it-works/become-a-coach-hero.png"); /* Replace with actual image URL if different */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .join-now-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .join-now-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .steps-and-details-container2 {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-description2 {
+  width: 50%;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+}
+.step-card2 {
+  display: flex;
+  flex-direction: column; /* Changed to column to place details below image */
+  max-width: 310px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.step-8 {
+  transform: translateX(265px);
+  margin-top: -112px;
+  z-index: 1;
+  max-width: 130px;
+}
+.step-9 {
+  transform: translateX(230px);
+  margin-top: 432px;
+  z-index: 1;
+  max-width: 210px;
+}
+.coach-video {
+  border-radius: 20px;
+}
+
+.custom-max-width {
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+}

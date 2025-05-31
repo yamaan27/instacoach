@@ -163,7 +163,7 @@
   .pre-footer-row {
     flex-direction: column;
     gap: 30px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .email-input-wrapper {
@@ -177,5 +177,46 @@
 
   .footer-links ul {
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pre-footer-row {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .email-input-wrapper {
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .footer-links ul {
+    justify-content: flex-start;
+  }
+
+  .pre-footer-right.mailing-list {
+    display: none;
+  }
+  .pre-footer-right.follow-us {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+}
+@media (max-width: 768px) {
+  .pre-footer-left.instacoach-info {
+    text-align: left;
+    align-items: flex-start;
   }
 }

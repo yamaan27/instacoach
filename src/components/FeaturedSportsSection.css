@@ -101,3 +101,14 @@
   font-size: 24px;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .featured-sports-container {
+    padding: 0 20px; /* Reduced top and bottom padding */
+  }
+  .scroll-btn.left {
+    left: -10px;
+  }
+  .scroll-btn.right {
+    right: -10px;
+  }
+}

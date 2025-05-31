@@ -1,0 +1,452 @@
+/* src/pages/HowItWorksPage.css */
+.how-it-works-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 60px 20px 0 20px;
+  background-color: #eaf6ff;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.text-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.how-it-works-title {
+  font-size: 62px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.highlight2 {
+  font-weight: 900;
+  color: #000;
+}
+
+.how-it-works-subtitle2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 26px;
+  margin: 10px 0;
+}
+
+.image-section {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.how-it-works-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.browse-coaches-btn {
+  color: #fff;
+  outline: none;
+  border: none;
+  background-color: #1273eb;
+  padding: 17px 45px;
+  font-size: 21px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.browse-coaches-btn:hover {
+  background-color: #0056b3;
+}
+
+.how-it-works-steps-section {
+  background-color: #fff;
+  text-align: center;
+}
+
+.how-it-works-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.steps-and-details-container {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.steps2-and-details-container {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  width: 50%;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column; /* Changed to column to place details below image */
+  max-width: 220px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 9px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.step2-card {
+  display: flex;
+  flex-direction: column; /* Changed to column to place details below image */
+  max-width: 220px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 9px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Staggered positioning for images */
+.step-1 {
+  transform: translateX(0);
+  z-index: 3;
+}
+
+.step-2 {
+  transform: translateX(160px);
+  margin-top: -440px;
+  z-index: 2;
+  border: 5px solid #2563eb;
+  background-color: #2563eb;
+}
+
+.step-3 {
+  transform: translateX(330px);
+  margin-top: -120px;
+  z-index: 1;
+}
+.step-7 {
+  transform: translateX(180px);
+  margin-top: -340px;
+  z-index: 1;
+  max-width: 260px;
+}
+
+.coach-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.coach2-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.step-details {
+  text-align: center; /* Center the text below the image */
+  font-family: "Poppins", sans-serif;
+}
+
+.coach-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.coach-role {
+  font-size: 14px;
+  color: #666;
+  margin: 0.2rem 0;
+}
+
+.coach-rating {
+  display: flex;
+  justify-content: center; /* Center the stars */
+  gap: 0.2rem;
+}
+
+.star {
+  color: #ffd700;
+  font-size: 16px;
+}
+
+.step-description {
+  width: 40%;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+.step-description h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 1rem;
+}
+
+.step-description p {
+  font-size: 18px;
+  word-spacing: 2px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.step-number {
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.text-us-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.text-us-btn .icon {
+  font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .how-it-works-steps-section {
+    /* padding-top: 5rem; */
+  }
+  .how-it-works-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
+  }
+  .steps-and-details-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .steps2-and-details-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+
+  .steps-container {
+    width: 100%;
+    margin-bottom: 1.7rem;
+  }
+
+  .step-card {
+    flex-direction: column; /* Already column, kept for clarity */
+    text-align: center;
+      max-width: 165px;
+      padding: 5px;
+  }
+  .step2-card {
+    flex-direction: column; /* Already column, kept for clarity */
+    text-align: center;
+      max-width: 200px;
+      padding: 6px;
+      position: absolute;
+    margin-top: 100px;
+  }
+  .step-1 {
+    transform: translateX(18px);
+    z-index: 3;
+  }
+  
+  .step-2 {
+    transform: translateX(115px);
+    margin-top: -340px;
+    z-index: 2;
+    border: 5px solid #2563eb;
+    background-color: #2563eb;
+  }
+  
+  .step-3 {
+    transform: translateX(230px);
+    margin-top: -90px;
+    z-index: 1;
+  }
+  .step-7 {
+    transform: translateX(130px);
+    margin-top: 0;
+    z-index: 1;
+    max-width: 260px;
+  }
+ 
+
+  .coach-image {
+    width: 150px;
+    height: 194px;
+  }
+  .coach2-image {
+    width: 250px;
+        height: 180px;
+  }
+
+  .step-details {
+    text-align: center;
+  }
+
+  .step-description {
+    width: 100%;
+    text-align: center;
+    text-align: left;
+  }
+
+  .step-description h3 {
+    justify-content: center;
+  }
+}
+
+.step-label {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #1273eb; /* Ensure text is white to match the background */
+}
+
+/* New styles for Step 2 section */
+.step-4 {
+  z-index: 2;
+}
+
+.step-5 {
+  transform: translateX(320px);
+  margin-top: -275px;
+  z-index: 2;
+}
+
+.small-image-card {
+  max-width: 200px;
+}
+
+.large-image {
+  width: 100%;
+  height: 80%;
+}
+
+.small-image {
+  width: 210px;
+  height: 210px;
+}
+
+.session-types {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.session-icon {
+  background-color: #f5c151;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Responsive adjustments for Step 2 */
+@media (max-width: 768px) {
+  .step-4 {
+    z-index: 2;
+  }
+  .step-5 {
+    transform: translateX(170px);
+    margin-top: -135px;
+    z-index: 2;
+  }
+
+  .large-image {
+    width: 90%;
+    height: 75%;
+    margin: 20px;
+  }
+  .small-image {
+    width: 190px;
+        height: 190px;
+  }
+
+  .session-types {
+    justify-content: center;
+  }
+}
+.less-bold {
+  font-weight: 400; /* Regular or adjust as needed */
+}
+
+.highlight-bold {
+  font-weight: 700; /* Bold */
+}
+
+@media (max-width: 768px) {
+  .how-it-works-wrapper {
+    margin: 40px 20px;
+    padding: 30px 0 0 0;
+  }
+  .how-it-works-title {
+    font-size: 35px;
+  }
+  .text-section {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-section {
+    height: auto !important;
+    flex-direction: column;
+  }
+
+  .browse-coaches-btn {
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+    padding: 12px 60px;
+    font-size: 17px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+}
